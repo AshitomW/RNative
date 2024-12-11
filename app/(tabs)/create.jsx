@@ -41,14 +41,13 @@ const Create = () => {
   };
 
   const submit = async () => {
-    console.log(user.$id);
     const data = { ...form, userId: user.$id };
     if (!form.prompt || !form.title || !form.thumbnail || !form.video) {
       return Alert.alert("Error", "Fill In All The Fields");
     }
 
     setUploading(true);
-    console.log(user);
+
     try {
       await createVideo(data);
 
@@ -82,7 +81,13 @@ const Create = () => {
             Upload Video
           </Text>
           <TouchableOpacity onPress={() => openPicker("video")}>
-            <View className="w-full h-36 px-4 bg-black-100 rounded-2xl justify-center items-center">
+            <View
+              className="w-full h-36 px-4  rounded-2xl justify-center items-center"
+              style={{
+                backgroundColor: "#1E3045",
+                borderColor: "#1E3045",
+              }}
+            >
               <View className="w-14 h-14 border border-dashed border-secondary-100 justify-center items-center">
                 <Image
                   source={icons.upload}
@@ -105,7 +110,13 @@ const Create = () => {
                 className="w-full h-64 rounded-2xl"
               />
             ) : (
-              <View className="w-full h-16 px-4 bg-black-100 rounded-2xl justify-center items-center border-2 border-black-200 flex-row space-x-2">
+              <View
+                style={{
+                  backgroundColor: "#1E3045",
+                  borderColor: "#1E3045",
+                }}
+                className="w-full h-16 px-4  rounded-2xl justify-center items-center border-2 border-black-200 flex-row space-x-2"
+              >
                 <Image
                   source={icons.upload}
                   resizeMode="contain"

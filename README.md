@@ -31,7 +31,7 @@ Ensure you have the following installed on your development environment:
 2. Navigate to the project directory:
 
    ```bash
-   cd
+   cd rnative
    ```
 
 3. Install dependencies:

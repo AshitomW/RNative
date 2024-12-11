@@ -25,8 +25,12 @@ const FormField = ({
         {title}
       </Text>
       <View
-        className={`w-full h-16 px-4 bg-black-100 rounded-2xl border-2 flex flex-row items-center 
-        ${isFocused ? "border-secondary-100" : "border-black-200"}`}
+        className={`w-full h-16 px-4 rounded-2xl border-2 flex flex-row items-center 
+        ${isFocused ? "border-secondary-100" : ""}`}
+        style={{
+          backgroundColor: "#1E3045",
+          borderColor: "#1E3045",
+        }}
       >
         <TextInput
           className="flex-1 text-white font-psemibold"

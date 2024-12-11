@@ -6,22 +6,29 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#161622",
+        primary: "#2A4364", // Deep blue, a variation from the original
         secondary: {
-          DEFAULT: "#FF9C01",
-          100: "#FF9001",
-          200: "#FF8E01",
+          DEFAULT: "#F39C12", // Warm orange, slightly different from original
+          100: "#F4A142",
+          200: "#F5A762",
         },
         black: {
-          DEFAULT: "#000",
-          100: "#1E1E2D",
-          200: "#232533",
+          DEFAULT: "#121212", // Slightly softer black
+          100: "#1A1A2A", // Dark slate blue
+          200: "#2A2A3A", // Lighter dark slate
         },
         gray: {
-          100: "#CDCDE0",
+          100: "#E0E0E8", // Lighter gray with a hint of blue
+          200: "#D1D1D9", // Additional gray variant
+        },
+        accent: {
+          blue: "#4A90E2", // Bright accent blue
+          green: "#2ECC71", // Fresh green
+          red: "#E74C3C", // Vibrant red
         },
       },
       fontFamily: {
+        // Keeping the Poppins variations
         pthin: ["Poppins-Thin", "sans-serif"],
         pextralight: ["Poppins-ExtraLight", "sans-serif"],
         plight: ["Poppins-Light", "sans-serif"],
@@ -32,7 +39,20 @@ module.exports = {
         pextrabold: ["Poppins-ExtraBold", "sans-serif"],
         pblack: ["Poppins-Black", "sans-serif"],
       },
+      // Additional theme extensions
+      spacing: {
+        128: "32rem",
+        144: "36rem",
+      },
+      borderRadius: {
+        large: "1rem",
+      },
+      boxShadow: {
+        custom:
+          "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      },
     },
   },
+
   plugins: [],
 };

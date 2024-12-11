@@ -31,14 +31,17 @@ const TabLayout = () => {
       <Tabs
         screenOptions={{
           borderWidth: 1,
-          tabBarActiveTintColor: "#FFA001",
-          tabBarInactiveTintColor: "#CDCDE0",
+          tabBarActiveTintColor: "#F39C12", // Matching secondary color from previous theme
+          tabBarInactiveTintColor: "#E0E0E8", // Matching gray-100 from previous theme
           tabBarShowLabel: false,
           tabBarStyle: {
-            backgroundColor: "#161622",
+            backgroundColor: "#3D4364", // Matching black-100 from previous theme
             borderTopWidth: 1,
-            borderTopColor: "#232533",
+            borderTopColor: "#2A4364", // Matching black-200 from previous theme
             height: 64,
+          },
+          tabBarIconStyle: {
+            marginTop: 5, // Adjust icon positioning if needed
           },
         }}
       >

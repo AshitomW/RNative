@@ -78,6 +78,7 @@ const Trending = ({ posts }) => {
 
   return (
     <FlatList
+      showsHorizontalScrollIndicator={false}
       onViewableItemsChanged={viewableItemsChanged}
       viewabilityConfig={{
         itemVisiblePercentThreshold: 100,

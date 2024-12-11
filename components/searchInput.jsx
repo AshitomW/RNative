@@ -16,8 +16,12 @@ const SearchField = ({ initialQuery, placeholder }) => {
   const [query, setQuery] = useState(initialQuery || "");
   return (
     <View
-      className={`w-full mt-4  h-16 px-4 bg-black-100 rounded-2xl border-2 flex flex-row space-x-4 items-center 
-        ${isFocused ? "border-secondary-100" : "border-black-200"}`}
+      className={`w-full h-16 px-4 rounded-2xl border-2 flex flex-row items-center 
+        ${isFocused ? "border-secondary-100" : ""}`}
+      style={{
+        backgroundColor: "#1E3045",
+        borderColor: "#1E3045",
+      }}
     >
       <TextInput
         className="text-base mt-0.5 text-white flex-1 font-pregular"
